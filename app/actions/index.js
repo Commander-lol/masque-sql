@@ -1,0 +1,1 @@
+export const SET_NOTIFIER = 'SET_NOTIFIER'

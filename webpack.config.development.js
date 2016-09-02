@@ -28,12 +28,27 @@ export default merge(baseConfig, {
 					'css-loader?sourceMap',
 				],
 			},
-
 			{
 				test: /^((?!\.global).)*\.css$/,
 				loaders: [
 					'style-loader',
 					'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+				],
+			},
+			{
+				test: /\.global\.scss$/,
+				loaders: [
+					'style-loader',
+					'css-loader',
+					'sass-loader',
+				],
+			},
+			{
+				test: /^((?!\.global).)*\.scss$/,
+				loaders: [
+					'style-loader',
+					'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+					'sass-loader',
 				],
 			},
 		],

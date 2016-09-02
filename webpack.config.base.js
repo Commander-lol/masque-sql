@@ -17,6 +17,10 @@ export default {
 		libraryTarget: 'commonjs2',
 	},
 	resolve: {
+		root: path.resolve('./app'),
+		alias: {
+			styles: path.resolve('./app/styles'),
+		},
 		extensions: ['', '.js', '.jsx', '.json'],
 		packageMains: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main'],
 	},

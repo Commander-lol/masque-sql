@@ -1,10 +1,12 @@
 import {combineReducers} from 'redux'
 import {routerReducer as routing} from 'react-router-redux'
-import counter from './counter'
+import notifier from './notifier'
 
-const rootReducer = combineReducers({
-	counter,
-	routing,
-})
+const rootReducer = combineReducers(
+	{
+		routing,
+		notifier,
+	}
+)
 
 export default rootReducer

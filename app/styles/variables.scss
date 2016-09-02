@@ -1,0 +1,16 @@
+$col-dark: #302c2d;
+$col-primary: #fbbb1c;
+$col-subtle: #ABA993;
+$col-white: #FFFFF0;
+
+$grad-dark: linear-gradient(180deg, $col-dark, darken($col-dark, 5%));
+$grad-primary: linear-gradient(180deg, $col-primary, darken($col-primary, 5%));
+$grad-white: linear-gradient(180deg, $col-white, darken($col-white, 5%));
+$grad-ivory: linear-gradient(180deg, $col-white, $col-subtle);
+
+$time-fast: 0.1s;
+$time-normal: 0.2s;
+$time-slow: 0.3s;
+
+$space-inline: 0.2em;
+$space-block: 0.5em;
