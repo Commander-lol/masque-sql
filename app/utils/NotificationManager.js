@@ -11,11 +11,23 @@ class NotificationManager {
 		})
 	}
 
-	add() {
+	defaultParams() {
+		return {
+			position: 'br',
+		}
+	}
+
+	add(message, level, title) {
 		this._notify.addNotification({
-			message: 'Notification message',
-			level: 'success',
+			...this.defaultParams(),
+			message,
+			level,
+			title,
 		})
+	}
+
+	success(message, title) {
+		this.add(message, 'success', title)
 	}
 }
 

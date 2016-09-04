@@ -1,30 +1,23 @@
 import React, {Component} from 'react'
 import css from './Root.scss'
-var NotificationSystem = require('react-notification-system');
-import Notify from 'utils/NotificationManager'
+import { Scrollbars } from 'react-custom-scrollbars'
+import NotificationSystem  from 'react-notification-system'
 import {Button} from 'stardust'
 import Dragbar from 'components/Dragbar'
 
 export default class Root extends Component {
 
-	_notificationSystem = null
-
-	_addNotification = (event) => {
-		event.preventDefault();
-		Notify.add();
-	}
-
 	componentDidMount = () => {
 		this.props.mountNotify(this.refs.notificationSystem)
 	}
 
-	render = ({children} = this.props) => (
+	render = ({children, location} = this.props) => (
 		<div className={css.container}>
-
-			<Dragbar />
-			{children}
-			<Button onClick={this._addNotification}>Add notification</Button>
+			<Scrollbars className={css.container} autoHide={false}>
+				{children}
+			</Scrollbars>
 			<NotificationSystem ref="notificationSystem" />
+			<Dragbar location={location} />
 		</div>
 	)
 }

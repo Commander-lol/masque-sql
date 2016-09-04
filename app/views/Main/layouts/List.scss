@@ -1,5 +1,10 @@
+@import '~styles/variables';
+
 .container {
 	display: flex !important;
 	flex-flow: row wrap;
 	justify-content: space-around;
+}
+.page {
+	padding: $space-block;
 }

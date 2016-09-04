@@ -5,20 +5,43 @@
 	-webkit-app-region: drag;
 	padding: 2px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	background-color: darken(white, 5%);
 	border-bottom: darken(white, 8%) 1px solid;
-
+	z-index: 999999;
 }
 .buttons {
 	display: flex;
 	justify-content: space-around;
 }
 
+.pageMenu > *{
+	-webkit-app-region: no-drag;
+}
+
+.pageMenu {
+	display: flex;
+	align-items: center;
+}
+
+.red {
+	background-color: #3ac0ff;
+}
+
 .button {
 	font-size: 80%;
+	background: white;
+	cursor: pointer;
 	-webkit-app-region: no-drag;
 	&:hover {
-		background-color: #ff4335;
+		&.close {
+			background-color: #ff4335;
+		}
+		&.maximize {
+			background-color: #2ecc40;
+		}
+		&.minimize {
+			background-color: #ebcd00;
+		}
 	}
 }

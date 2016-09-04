@@ -1,1 +1,1 @@
-export List from './layouts/List'
+export List from './containers/List'

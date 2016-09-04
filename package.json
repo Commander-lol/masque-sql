@@ -1,8 +1,8 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
+  "name": "masque-sql",
+  "productName": "Masque SQL",
   "version": "0.10.0",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "description": "It's like sql and junk",
   "main": "main.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 mocha --compilers js:babel-register --recursive --require ./test/setup.js test/**/*.spec.js",
@@ -25,16 +25,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chentsulin/electron-react-boilerplate.git"
+    "url": "git+https://github.com/commander-lol/masque-sql.git"
   },
   "author": {
-    "name": "C. T. Lin",
-    "email": "chentsulin@gmail.com",
-    "url": "https://github.com/chentsulin"
+    "name": "Louis Capitanchik",
+    "email": "contact@louiscap.co",
+    "url": "https://github.com/commander-lol"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chentsulin/electron-react-boilerplate/issues"
+    "url": "https://github.com/commander-lol/masque-sql/issues"
   },
   "keywords": [
     "electron",
@@ -45,7 +45,7 @@
     "webpack",
     "react-hot"
   ],
-  "homepage": "https://github.com/chentsulin/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/commander-lol/masque-sql#readme",
   "devDependencies": {
     "asar": "^0.12.2",
     "babel-core": "^6.14.0",
@@ -99,21 +99,34 @@
     "webpack-merge": "^0.14.1"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
+    "codemirror": "^5.18.2",
     "css-modules-require-hook": "^4.0.2",
     "electron-debug": "^1.0.1",
     "font-awesome": "^4.6.3",
+    "moment": "^2.14.1",
     "mysql": "^2.11.1",
+    "mysql-utilities": "^1.0.8",
     "postcss": "^5.1.2",
+    "query-string": "^4.2.3",
     "react": "^15.3.1",
+    "react-codemirror": "^0.2.6",
+    "react-custom-scrollbars": "^4.0.0",
+    "react-data-grid": "^1.0.40",
+    "react-datatable": "0.0.31",
     "react-dom": "^15.3.1",
     "react-notification-system": "^0.2.10",
     "react-redux": "^4.4.5",
     "react-router": "^2.7.0",
     "react-router-redux": "^4.0.5",
+    "react-split-pane": "^0.1.44",
+    "reactable": "^0.14.0",
     "redux": "^3.5.2",
+    "redux-electron-ipc": "^1.1.0",
     "redux-thunk": "^2.1.0",
     "source-map-support": "^0.4.2",
-    "stardust": "^0.40.0"
+    "stardust": "^0.40.0",
+    "uuid": "^2.0.2"
   },
   "devEngines": {
     "node": "4.x || 5.x || 6.x",
